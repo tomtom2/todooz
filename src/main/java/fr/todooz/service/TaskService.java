@@ -29,4 +29,6 @@ public interface TaskService {
 
 	List<Task> findByInterval(Interval interval);
 
+	void deleteAll();
+
 }

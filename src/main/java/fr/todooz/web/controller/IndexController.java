@@ -34,19 +34,16 @@ public class IndexController {
 
 	@RequestMapping({ "/", "/index" })
 	public String index(Model model) {
-		model.addAttribute("tagCloud", tagCloudService.buildTagCloud());
 		return page(model, taskService.findAll());
 	}
 
 	@RequestMapping("/search")
 	public String search(String query, Model model) {
-		model.addAttribute("tagCloud", tagCloudService.buildTagCloud());
 		return page(model, taskService.findByQuery(query));
 	}
 
 	@RequestMapping("/tag/{tag}")
 	public String tag(@PathVariable String tag, Model model) {
-		model.addAttribute("tagCloud", tagCloudService.buildTagCloud());
 		return page(model, taskService.findByTag(tag));
 	}
 	
@@ -61,19 +58,6 @@ public class IndexController {
 		return page(model, taskService.findByInterval(IntervalUtils.tomorrowInterval()));
 	}
 	
-/*
-	@RequestMapping("/today")
-	public String today(Model model) {
-		return page(model,
-				taskService.findByInterval(IntervalUtils.todayInterval()));
-	}
-
-	@RequestMapping("/tomorrow")
-	public String tomorrow(Model model) {
-		return page(model,
-				taskService.findByInterval(IntervalUtils.tomorrowInterval()));
-	}
-*/
 
 	public String page(Model model, List<Task> tasks) {
 		model.addAttribute("tasks", tasks);
@@ -81,18 +65,20 @@ public class IndexController {
 		return "index";
 	}
 
+	
 	@PostConstruct
 	public void bootstrap() {
 
 		if (taskService.count() == 0) {
+		      
 			Task task1 = new Task();
-			task1.setDate(new Date());
+			task1.setDate(new Date("12/01/2012"));
 			task1.setTitle("Read Effective Java");
 			task1.setText("Read Effective Java before it's too late");
 			task1.setTags("tag1,tag2,JEE");
 
 			Task task2 = new Task();
-			task2.setDate(new Date());
+			task2.setDate(new Date("12/03/2012"));
 			task2.setTitle("Finir les tutos MC");
 			task2.setText("Relire et poursuivre les tutoriels de la Masterclass");
 			task2.setTags("spring,JEE,autres...");

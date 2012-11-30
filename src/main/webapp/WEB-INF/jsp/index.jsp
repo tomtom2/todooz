@@ -18,8 +18,8 @@
     
     <div class="row">
         <div class="span9">
-            <c:if test="${not empty flashMessage}">
-                <div class="alert">${flashMessage}</div>
+            <c:if test="${not empty addOK}">
+                <div class="alert">${addOK}</div>
             </c:if>
 
             <legend>All tasks</legend>

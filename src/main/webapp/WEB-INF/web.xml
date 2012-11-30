@@ -5,41 +5,6 @@
 	version="2.5">
 
 	<display-name>todooz</display-name>
-	<!-- <servlet>
-		<servlet-name>HelloWorldServlet</servlet-name>
-		<servlet-class>fr.todooz.web.servlet.HelloWorldServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>HelloWorldServlet</servlet-name>
-		<url-pattern>/HelloWorldServlet</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>HelloWorldRedirectServlet</servlet-name>
-		<servlet-class>fr.todooz.web.servlet.HelloWorldRedirectServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>HelloWorldRedirectServlet</servlet-name>
-		<url-pattern>/HelloWorldRedirectServlet</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>HelloWorldSessionServlet</servlet-name>
-		<servlet-class>fr.todooz.web.servlet.HelloWorldSessionServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>HelloWorldSessionServlet</servlet-name>
-		<url-pattern>/HelloWorldSessionServlet</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>index</servlet-name>
-		<servlet-class>fr.todooz.web.servlet.IndexServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>index</servlet-name>
-		<url-pattern>/index.html</url-pattern>
-	</servlet-mapping>-->
 
 	<!-- Spring servlet -->
 	<servlet>
@@ -58,6 +23,23 @@
 	</filter>
 	<filter-mapping>
 		<filter-name>monitoring</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- Spring UTF-8 filter -->
+	<filter>
+		<filter-name>encoding-filter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encoding-filter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 	<listener>
