@@ -33,6 +33,12 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 		<property name="defaultLocale" value="fr_FR" />
 	</bean>
 
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="persistenceXmlLocation" value="classpath:persistence.xml" />
+	</bean>
+
 	<!-- Configuration de la technologie de rendu -->
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
