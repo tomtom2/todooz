@@ -2,17 +2,36 @@ package fr.todooz;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import org.apache.commons.lang.StringUtils;
 
+@Entity
+@Table(name = "task")
 public class Task {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
+	@Column
     private Date createdAt = new Date();
 
+	@Column
     private String title;
 
+	@Column(length = 4000, nullable = true)
     private String text;
 
+	@Column
     private Date date;
 
+	@Column(nullable = true)
     private String tags;
 
     public Date getCreatedAt() {
@@ -23,7 +42,17 @@ public class Task {
         this.createdAt = createdAt;
     }
 
-    public String getTitle() {
+    
+    
+    public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
         return title;
     }
 

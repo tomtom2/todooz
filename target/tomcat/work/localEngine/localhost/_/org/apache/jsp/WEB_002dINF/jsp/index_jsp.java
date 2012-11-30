@@ -65,60 +65,61 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("<head>\n");
-      out.write("    <title>Todooz</title>\n");
-      out.write("    <!-- Bootstrap -->\n");
-      out.write("    <link href=\"css/bootstrap.min.css\" rel=\"stylesheet\">\n");
+      out.write("<title>Todooz</title>\n");
+      out.write("<!-- Bootstrap -->\n");
+      out.write("<link href=\"css/bootstrap.min.css\" rel=\"stylesheet\">\n");
       out.write("</head>\n");
       out.write("<body>\n");
-      out.write("<div class=\"container\">\n");
-      out.write("    <div class=\"navbar navbar-inverse\">\n");
-      out.write("        <div class=\"navbar-inner\">\n");
-      out.write("            <span class=\"brand\">Todooz</span>\n");
-      out.write("            <form class=\"navbar-search pull-left\">\n");
-      out.write("                <input type=\"text\" class=\"search-query\" placeholder=\"Search\">\n");
-      out.write("            </form>\n");
-      out.write("            <a href=\"/add\" class=\"btn btn-inverse pull-right\"><i class=\"icon-plus icon-white\"></i></a>\n");
-      out.write("        </div>\n");
-      out.write("    </div>\n");
-      out.write("    <div class=\"row\">\n");
-      out.write("        <div class=\"span9\">\n");
-      out.write("            <legend>All tasks</legend>\n");
+      out.write("\t<div class=\"container\">\n");
+      out.write("\t\t<div class=\"navbar navbar-inverse\">\n");
+      out.write("\t\t\t<div class=\"navbar-inner\">\n");
+      out.write("\t\t\t\t<span class=\"brand\">Todooz</span>\n");
+      out.write("\t\t\t\t<form class=\"navbar-search pull-left\">\n");
+      out.write("\t\t\t\t\t<input type=\"text\" class=\"search-query\" placeholder=\"Search\">\n");
+      out.write("\t\t\t\t</form>\n");
+      out.write("\t\t\t\t<a href=\"/add\" class=\"btn btn-inverse pull-right\"><i\n");
+      out.write("\t\t\t\t\tclass=\"icon-plus icon-white\"></i></a>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t\t<div class=\"row\">\n");
+      out.write("\t\t\t<div class=\"span9\">\n");
+      out.write("\t\t\t\t<legend>All tasks</legend>\n");
       out.write("\n");
-      out.write("\t\t\t");
+      out.write("\t\t\t\t");
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
         return;
       out.write("\n");
       out.write("\n");
-      out.write("        </div>\n");
-      out.write("        <div class=\"span3\">\n");
-      out.write("            <div>\n");
-      out.write("                <legend>Quick links</legend>\n");
-      out.write("                <ul>\n");
-      out.write("                    <li><a href=\"/today\">Today's</a></li>\n");
-      out.write("                    <li><a href=\"/today\">Tomorrow's</a></li>\n");
-      out.write("                </ul>\n");
-      out.write("            </div>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t\t<div class=\"span3\">\n");
+      out.write("\t\t\t\t<div>\n");
+      out.write("\t\t\t\t\t<legend>Quick links</legend>\n");
+      out.write("\t\t\t\t\t<ul>\n");
+      out.write("\t\t\t\t\t\t<li><a href=\"/today\">Today's</a></li>\n");
+      out.write("\t\t\t\t\t\t<li><a href=\"/today\">Tomorrow's</a></li>\n");
+      out.write("\t\t\t\t\t</ul>\n");
+      out.write("\t\t\t\t</div>\n");
       out.write("\n");
-      out.write("            <div>\n");
-      out.write("                <legend>Tags</legend>\n");
-      out.write("                <a href=\"/tag/java\" style=\"font-size:14px\">java</a>\n");
-      out.write("                <a href=\"/tag/java\" style=\"font-size:20px\">java</a>\n");
-      out.write("                <a href=\"/tag/java\" style=\"font-size:16px\">java</a>\n");
-      out.write("                <a href=\"/tag/java\" style=\"font-size:12px\">java</a>\n");
-      out.write("                <a href=\"/tag/java\" style=\"font-size:10px\">java</a>\n");
-      out.write("                <a href=\"/tag/java\" style=\"font-size:22px\">java</a>\n");
-      out.write("                <a href=\"/tag/java\" style=\"font-size:12px\">java</a>\n");
-      out.write("                <a href=\"/tag/java\" style=\"font-size:14px\">java</a>\n");
-      out.write("                <a href=\"/tag/java\" style=\"font-size:18px\">java</a>\n");
-      out.write("                <a href=\"/tag/java\" style=\"font-size:24px\">java</a>\n");
-      out.write("                <a href=\"/tag/java\" style=\"font-size:12px\">java</a>\n");
-      out.write("                <a href=\"/tag/java\" style=\"font-size:10px\">java</a>\n");
-      out.write("                <a href=\"/tag/java\" style=\"font-size:14px\">java</a>\n");
-      out.write("            </div>\n");
-      out.write("        </div>\n");
-      out.write("    </div>\n");
-      out.write("</div>\n");
-      out.write("<script src=\"js/bootstrap.min.js\"></script>\n");
+      out.write("\t\t\t\t<div>\n");
+      out.write("\t\t\t\t\t<legend>Tags</legend>\n");
+      out.write("\t\t\t\t\t<a href=\"/tag/java\" style=\"font-size: 14px\">java</a> <a\n");
+      out.write("\t\t\t\t\t\thref=\"/tag/java\" style=\"font-size: 20px\">java</a> <a\n");
+      out.write("\t\t\t\t\t\thref=\"/tag/java\" style=\"font-size: 16px\">java</a> <a\n");
+      out.write("\t\t\t\t\t\thref=\"/tag/java\" style=\"font-size: 12px\">java</a> <a\n");
+      out.write("\t\t\t\t\t\thref=\"/tag/java\" style=\"font-size: 10px\">java</a> <a\n");
+      out.write("\t\t\t\t\t\thref=\"/tag/java\" style=\"font-size: 22px\">java</a> <a\n");
+      out.write("\t\t\t\t\t\thref=\"/tag/java\" style=\"font-size: 12px\">java</a> <a\n");
+      out.write("\t\t\t\t\t\thref=\"/tag/java\" style=\"font-size: 14px\">java</a> <a\n");
+      out.write("\t\t\t\t\t\thref=\"/tag/java\" style=\"font-size: 18px\">java</a> <a\n");
+      out.write("\t\t\t\t\t\thref=\"/tag/java\" style=\"font-size: 24px\">java</a> <a\n");
+      out.write("\t\t\t\t\t\thref=\"/tag/java\" style=\"font-size: 12px\">java</a> <a\n");
+      out.write("\t\t\t\t\t\thref=\"/tag/java\" style=\"font-size: 10px\">java</a> <a\n");
+      out.write("\t\t\t\t\t\thref=\"/tag/java\" style=\"font-size: 14px\">java</a>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t</div>\n");
+      out.write("\t<script src=\"js/bootstrap.min.js\"></script>\n");
       out.write("</body>\n");
       out.write("</html>\n");
       out.write("\n");
@@ -142,9 +143,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f0.setParent(null);
-    // /WEB-INF/jsp/index.jsp(28,3) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/index.jsp(30,4) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVar("task");
-    // /WEB-INF/jsp/index.jsp(28,3) name = items type = java.lang.Object reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/index.jsp(30,4) name = items type = java.lang.Object reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${tasks}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {
@@ -152,23 +153,25 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_eval_c_005fforEach_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
           out.write("\n");
-          out.write("\t\t\t    <div>\n");
-          out.write("                    <p>");
+          out.write("\t\t\t\t\t<div>\n");
+          out.write("\t\t\t\t\t\t<p>\n");
+          out.write("\t\t\t\t\t\t\t");
           if (_jspx_meth_fmt_005fformatDate_005f0(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
-          out.write("</p>\n");
-          out.write("                    <span class=\"lead\">");
+          out.write("\n");
+          out.write("\t\t\t\t\t\t</p>\n");
+          out.write("\t\t\t\t\t\t<span class=\"lead\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${task.title}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write("</span>\n");
-          out.write("                    ");
+          out.write("\t\t\t\t\t\t");
           if (_jspx_meth_c_005fforEach_005f1(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
           out.write("\n");
-          out.write("                    <p>");
+          out.write("\t\t\t\t\t\t<p>");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${task.text}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write("</p>\n");
-          out.write("                </div>\n");
-          out.write("\t\t\t");
+          out.write("\t\t\t\t\t</div>\n");
+          out.write("\t\t\t\t");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -196,9 +199,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.fmt.FormatDateTag _jspx_th_fmt_005fformatDate_005f0 = (org.apache.taglibs.standard.tag.rt.fmt.FormatDateTag) _005fjspx_005ftagPool_005ffmt_005fformatDate_0026_005fvalue_005fpattern_005fnobody.get(org.apache.taglibs.standard.tag.rt.fmt.FormatDateTag.class);
     _jspx_th_fmt_005fformatDate_005f0.setPageContext(_jspx_page_context);
     _jspx_th_fmt_005fformatDate_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/index.jsp(30,23) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/index.jsp(33,7) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_fmt_005fformatDate_005f0.setValue((java.util.Date) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${task.date}", java.util.Date.class, (PageContext)_jspx_page_context, null, false));
-    // /WEB-INF/jsp/index.jsp(30,23) name = pattern type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/index.jsp(33,7) name = pattern type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_fmt_005fformatDate_005f0.setPattern("dd MMM yyyy");
     int _jspx_eval_fmt_005fformatDate_005f0 = _jspx_th_fmt_005fformatDate_005f0.doStartTag();
     if (_jspx_th_fmt_005fformatDate_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -217,9 +220,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f1 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/index.jsp(32,20) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/index.jsp(36,6) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f1.setVar("tag");
-    // /WEB-INF/jsp/index.jsp(32,20) name = items type = java.lang.Object reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/index.jsp(36,6) name = items type = java.lang.Object reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f1.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${task.tags}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int[] _jspx_push_body_count_c_005fforEach_005f1 = new int[] { 0 };
     try {
@@ -227,10 +230,10 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_eval_c_005fforEach_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
           out.write("\n");
-          out.write("                        <span class=\"badge badge-info\">");
+          out.write("\t\t\t\t\t\t\t<span class=\"badge badge-info\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${tag}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write("</span>\n");
-          out.write("                    ");
+          out.write("\t\t\t\t\t\t");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f1.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
