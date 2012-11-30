@@ -1,68 +1,32 @@
 package fr.todooz.service;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import org.hibernate.Criteria;
-import org.hibernate.Query;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.criterion.MatchMode;
-import static org.hibernate.criterion.Restrictions.*;
+import org.joda.time.Interval;
 
-import fr.todooz.Task;
+import fr.todooz.domain.Task;
 
-public class TaskService {
+public interface TaskService {
 
-	private SessionFactory sessionFactory;
-	
-	public void save(Task task) {
-		Session session = sessionFactory.openSession();
+	public void save(Task task);
 
-	    session.save(task);
+	public void delete(Long id);
 
-	    session.close();
-	   }
+	public List<Task> findAll();
 
-	   public void delete(Long id) {
-		   Session session = sessionFactory.openSession();
-		   Query q = session.createQuery("delete from Task where id = :id ");
-	        q.setLong("id", id);
-	        q.executeUpdate();
-	        session.close();
-	   }
+	public List<Task> findByQuery(String query);
 
-	   public List<Task> findAll() {
-		   Session session = sessionFactory.openSession();
-		   Query query = session.createQuery("from Task");
-		   List<Task> tasks = query.list();
-		   return tasks;
-	   }
+	public int count();
 
-	   public List<Task> findByQuery(String query) {
-	      // TODO
-		   Session session = sessionFactory.openSession();
-		   Criteria criteria = session.createCriteria(Task.class);
-		   
-		   criteria.add(or(ilike("title", query, MatchMode.ANYWHERE), ilike("text", query, MatchMode.ANYWHERE)));
-		   List<Task> taskList = criteria.list();
-		   
-		   session.close();
-		   
-		   return taskList;
-	   }
+	public SessionFactory getSessionFactory();
 
-	   public int count() {
-		   return findAll().size();
-	   }
+	public void setSessionFactory(SessionFactory sessionFactory);
 
-	public SessionFactory getSessionFactory() {
-		return sessionFactory;
-	}
+	public Task findById(Long id);
 
-	public void setSessionFactory(SessionFactory sessionFactory) {
-		this.sessionFactory = sessionFactory;
-	}
-	   
-	   
+	public List findByTag(String string);
+
+	List<Task> findByInterval(Interval interval);
+
 }

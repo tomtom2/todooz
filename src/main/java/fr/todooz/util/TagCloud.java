@@ -50,4 +50,8 @@ public class TagCloud {
 		Collections.shuffle(tags);
 
 	}
+
+	public List<String> getTags() {
+		return tags;
+	}
 }

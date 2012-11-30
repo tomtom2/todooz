@@ -14,7 +14,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import fr.todooz.Task;
+import fr.todooz.domain.Task;
 
 public class HibernateTest {
 
